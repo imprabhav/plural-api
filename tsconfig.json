@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "jsx": "react-native",
+      "outDir": "./dist",
+      "strict": true,
+      "esModuleInterop": true
+    },
+    "include": ["index.ts", "src/**/*.ts"],
+    "exclude": ["node_modules", "dist"]
+  }
