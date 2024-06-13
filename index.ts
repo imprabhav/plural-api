@@ -18,7 +18,8 @@ app.use(bodyParser.json());
 app.use(express.json());
 app.use('/uploads', express.static(__dirname + '/uploads'));
 
-const port = 4000;
+const port = process.env.PORT || 4000;
+
 
 const multerMiddleWare = multer({dest: 'uploads/'}).array('photos');
 
